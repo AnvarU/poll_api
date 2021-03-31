@@ -9,7 +9,7 @@
 
 `pipenv shell`
 &ensp;
-`python manage.py runserver`
+`python polls_project\manage.py runserver`
 
 Чтобы получить токен авторизации, надо создать суперюзера и получить токен с помощью api/user/token.
 Чтобы использовать токен в сваггере, надо нажать на Authorize и вставить **Bearer token**
