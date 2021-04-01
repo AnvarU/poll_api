@@ -13,7 +13,7 @@ class UserAnswerSerializer(serializers.ModelSerializer):
 
 
 class AnonymousUserSerializer(serializers.ModelSerializer):
-    answers = AnswerShortSerializer(many=True)
+    answers = UserAnswerSerializer(many=True)
 
     class Meta:
         model = AnonymousUser
