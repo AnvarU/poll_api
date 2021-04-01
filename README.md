@@ -5,11 +5,11 @@
 `pip install pipenv`
 `pipenv install`
 
-Запуск сервера
+Docker build
+`docker build -t poll_api .`
 
-`pipenv shell`
-&ensp;
-`python polls_project\manage.py runserver`
+Docker run
+`docker run -p 8888:8888 poll_api`
 
 Чтобы получить токен авторизации, надо создать суперюзера и получить токен с помощью api/user/token.
 Чтобы использовать токен в сваггере, надо нажать на Authorize и вставить **Bearer token**
@@ -19,4 +19,4 @@
 
 Техническая документация описана в сваггере
 
-Доступ к сваггеру http://localhost:8000/swagger
+Доступ к сваггеру http://localhost:8888/swagger
