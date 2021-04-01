@@ -4,7 +4,7 @@ from rest_api.models.answer import Answer
 from rest_api.models.question import ChoiceSerializer
 
 
-class AnswerShortSerializer(serializers.ModelSerializer):
+class UserAnswerSerializer(serializers.ModelSerializer):
     choice = ChoiceSerializer(many=True)
 
     class Meta:
