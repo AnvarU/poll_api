@@ -1,6 +1,6 @@
-## Использование
+## Usage
 
-Установка библиотек
+To install libraries
 
 `pip install pipenv`
 `pipenv install`
@@ -11,12 +11,12 @@ Docker build
 Docker run
 `docker run -p 8888:8888 poll_api`
 
-Чтобы получить токен авторизации, надо создать суперюзера и получить токен с помощью api/user/token.
-Чтобы использовать токен в сваггере, надо нажать на Authorize и вставить **Bearer token**
+To obtain auth token, you need to create django superuser with `python manage.py createsuperuser` and get auth with route `api/user/token`
+To use this token in swagger, you need to press Authorize and paste **Bearer <token>**
 
-## Документация
+## Documentation
 
 
-Техническая документация описана в сваггере
+You can see documentation in swagger
 
-Доступ к сваггеру http://localhost:8888/swagger
+Access to swagger http://localhost:8888/swagger
